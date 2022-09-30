@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #3aafa9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-container {
+  user-select: none;
+}
+
+.main-container .time {
+  background-color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+  padding: 0 10px;
+}
+
+.main-container .time span {
+  width: 120px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  color: #333;
+}
+
+.time span.colon {
+  width: 5px;
+}
+
+.main-container .para {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -30px 0 0 0;
+}
+
+.main-container .para p {
+  width: 125px;
+  text-align: center;
+  padding: 0 5px;
+  font-size: 15px;
+  color: #3aafa9;
+}
+
+.main-container .btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn button {
+  padding: 6px 15px;
+  outline: none;
+  border-radius: 4px;
+  color: #3aafa9;
+  border: none;
+  margin: 0 10px;
+  background: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .main-container .time span {
+    width: 60px;
+  }
+  .btn button {
+    margin: 0 5px;
+  }
+  .main-container .para p {
+    width: 110px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) and (min-width:390px) {
+  .main-container .time span {
+    width: 50px;
+    font-size: 40px;
+  }
+  .btn button {
+    margin: 0 3px;
+    font-size: 15px;
+  }
+  .main-container .para p {
+    width: 90px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 390px) and (min-width:310px) {
+  .main-container .time span {
+    width: 40px;
+    font-size: 30px;
+  }
+  .btn button {
+    margin: 0 3px;
+    font-size: 12px;
+  }
+  .main-container .para p {
+    width: 70px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 310px) and (min-width:290px) {
+  .main-container .time span {
+    width: 30px;
+    font-size: 30px;
+  }
+  .btn button {
+    margin: 0 3px;
+  }
+  .main-container .para p {
+    width:60px;
+    font-size: 11px;
+  }
+}
+
+
+
